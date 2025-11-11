@@ -152,14 +152,16 @@ The strip is a single tall image scrolled vertically. Requirements:
 
 ### Mega Wild
 - Trigger: ≥3 Bonus symbols `'B!'`.
-<img width="538" height="324" alt="image" src="https://github.com/user-attachments/assets/af4fd1e8-fe7d-4a4d-9d62-402570eae687" />
+<img width="673" height="404" alt="image" src="https://github.com/user-attachments/assets/de8a607c-5af1-48f5-8c47-a8cc84b4fba2" />
+
 
 - 10 spins; full-reel MEGAWILD starting on rightmost reel (4).
 - Stays for 2 spins per reel, then shifts left (animation occurs at next spin start).
 - Per-spin wins added to `megaWildTotalWin` (displayed via Bonus Total badge).
 - At end: total paid, wolf persists until next normal spin (cleanup at spin start).
 
-<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/ec5c11f3-5f2d-43b4-8db6-870353976ded" />
+<img width="1030" height="624" alt="image" src="https://github.com/user-attachments/assets/2485ecc1-aea9-400d-b4d9-d0120f6fb9d1" />
+
 
 
 Key state fields:
@@ -178,7 +180,8 @@ megaWildCleanupPending // cleanup flag after bonus end
 - 3 spins countdown; landing new WILD resets spins-left to 3.
 - If board fills or spins-left hits 0: sum all coin values, pay, exit.
 - Coins re-render each spin with numeric values.
-<img width="1006" height="603" alt="image" src="https://github.com/user-attachments/assets/cb5d9c99-0c15-4a88-86e9-e01ef008d5ff" />
+<img width="1027" height="618" alt="image" src="https://github.com/user-attachments/assets/2f7fe5cb-0e50-41c9-b7e7-be8bdd1c20b4" />
+
 
 
 Key state fields:
