@@ -15,6 +15,7 @@ coverage/
 .vscode/
 .idea/
 *.code-workspace
+.vs/
 
 # Logs
 npm-debug.log*
