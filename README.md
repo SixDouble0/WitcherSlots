@@ -1,5 +1,3 @@
-<img width="1919" height="878" alt="image" src="https://github.com/user-attachments/assets/cb914969-8d80-4301-a121-56167d07c580" /># WitcherSlots (Phaser 3 Slot Machine)
-
 A modular HTML5 slot machine built with Phaser 3, focusing on clean architecture, extensibility and two bonus mechanics (Mega Wild & Hold & Spin). This project demonstrates game flow orchestration, layered rendering, bonus state machines, and UI feedback (big win animations, modal system, dynamic bet handling).
 <img width="1919" height="874" alt="image" src="https://github.com/user-attachments/assets/39f8a3d6-adba-4c42-8dd8-d6876ab9d2b1" />
 
@@ -154,7 +152,8 @@ The strip is a single tall image scrolled vertically. Requirements:
 
 ### Mega Wild
 - Trigger: ≥3 Bonus symbols `'B!'`.
-<img width="1919" height="878" alt="image" src="https://github.com/user-attachments/assets/d4f58a4b-b6bb-40ec-b521-b276e7c06d66" />
+<img width="538" height="324" alt="image" src="https://github.com/user-attachments/assets/af4fd1e8-fe7d-4a4d-9d62-402570eae687" />
+
 - 10 spins; full-reel MEGAWILD starting on rightmost reel (4).
 - Stays for 2 spins per reel, then shifts left (animation occurs at next spin start).
 - Per-spin wins added to `megaWildTotalWin` (displayed via Bonus Total badge).
