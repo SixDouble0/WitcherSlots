@@ -1,0 +1,44 @@
+# Node / tooling
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+coverage/
+.temp/
+.cache/
+
+# IDE / editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Env / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Images generated or exported (optional – remove if you want to track)
+export/
+spritesheet-gen/
+
+# Video cache
+video/*.tmp
+
+# Misc
+*.swp
+*.swo

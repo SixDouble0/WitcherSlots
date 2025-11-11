@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="Slots.css" />
+</head>
+<body>
+    <div class="slot-layout">
+        <div class="bonus-panel">
+            <button id="forceBonusButton" class="bonus-btn" type="button">
+                BONUS
+                <span id="bonus-cost" class="bonus-cost">Cost: 0.00 $</span>
+            </button>
+            <button id="HnSBonusButton" class="bonus-btn" type="button">
+                HOLD & SPIN
+                <span id="hns-cost" class="bonus-cost">Cost: 0.00 $</span>
+            </button>
+        </div>
+        <div class="slot-center">
+            <div class="slot-frame">
+                <div id="phaser-container"></div>
+            </div>
+            <div class="win-display" id="winDisplay">Winnings: 0.00</div>
+        </div>
+    </div>
+
+    <div class="bottom-panel">
+        <div class="bottom-inner">
+            <div class="bet-controls">
+                <button class="bet-btn" id="minus-bet">-</button>
+                <span id="bet-amount">0,50</span>
+                <span class="slot-panel__currency">$</span>
+                <button class="bet-btn" id="plus-bet">+</button>
+            </div>
+            <button id="spinButton" class="spin-btn" title="Spin">
+                <span class="spin-arrow">&#8635;</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="balance-display">
+        Balance: <span id="balanceDisplay">$1000.00</span>
+    </div>
+
+    <!-- Win counter -->
+    <div id="winCounterHtml" style="display:none; position:fixed; left:50%; top:55%; transform:translate(-50%,0); font-size:64px; color:#C0C0C0; font-weight:bold; text-shadow:0 0 12px #fff; z-index:2020;"></div>
+
+    <!-- Fade overlay -->
+    <div id="fadeOverlay" style="position:fixed;left:0;top:0;width:100vw;height:100vh;background:#000;opacity:0;pointer-events:none;z-index:1000;transition:opacity .3s;"></div>
+
+    <!-- Big win overlay -->
+    <div id="bigWinVideoOverlay" style="position:fixed;left:0;top:0;width:100vw;height:100vh;display:none;z-index:2000;align-items:center;justify-content:center;">
+        <video id="bigWinVideo" style="width:100vw;height:100vh;object-fit:cover;pointer-events:none;"></video>
+        <div id="bigWinTextOverlay" style="position:absolute;top:20%;width:100vw;text-align:center;font-size:5vw;color:#C0C0C0;text-shadow:0 0 14px #ffffff,0 0 36px #C0C0C0;z-index:2010;"></div>
+    </div>
+
+    <!-- Bonus modal -->
+    <div id="bonusInfoModal" class="modal">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="bonusInfoTitle">
+            <button id="bonusInfoCloseBtn" class="modal-close-btn" title="Close">&times;</button>
+            <h2 id="bonusInfoTitle" class="modal-title">Bonus</h2>
+            <img id="bonusInfoImage" alt="Bonus image" class="modal-image" />
+            <div id="bonusInfoText" class="modal-text"></div>
+            <div class="modal-actions modal-actions--center">
+                <button id="bonusInfoContinueBtn" class="modal-primary modal-primary--wide">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
