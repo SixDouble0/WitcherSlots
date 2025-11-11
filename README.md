@@ -223,31 +223,7 @@ To move from 5x3 to (say) 6x4:
 4. Add paylines covering extra grid cells.
 5. Verify Mega Wild logic (reel indices) still valid (`megaWildCurrentReel` should start at `REEL_COUNT-1`).
 
----
-
-## 12. Extensibility Ideas
-
-- Additional bonus types (e.g., expanding wilds, multiplier ladder):
-  - Add new bonus file `bonusXXX.js`.
-  - Introduce trigger check in `paylines.js`.
-  - Integrate into `onAllReelsStopped` (main.js).
-
-- Sound effects:
-  - Preload audio in `preload()`.
-  - Fire on spin start, reel stop, win, bonus entry.
-
-- Persistence:
-  - Save `balance` and `currentBet` to `localStorage` on change; restore on load.
-
-- Adaptive volatility:
-  - Provide multiple SYMBOL_MAP variants and swap based on mode.
-
-- Auto-play:
-  - Loop `spinHandler` with safeguards (stop on bonus trigger; user confirmation mid-bonus).
-
----
-
-## 13. Performance Notes
+## 12. Performance Notes
 
 - Using two stacked images for each reel keeps scrolling cheap.
 - Win line drawing uses lightweight `Phaser.Graphics`; cleared every spin.
@@ -256,7 +232,7 @@ To move from 5x3 to (say) 6x4:
 
 ---
 
-## 14. Testing Suggestions
+## 13. Testing Suggestions
 
 - Unit test payoff logic (`evaluateWins` + `calculateTotalWin`).
 - Scenario tests for bonus triggers: mock `visibleSymbols`.
@@ -265,7 +241,7 @@ To move from 5x3 to (say) 6x4:
 
 ---
 
-## 15. Quick Start
+## 14. Quick Start
 
 1. Clone repository.
 2. Serve folder (any static server, e.g.:
@@ -280,7 +256,7 @@ To move from 5x3 to (say) 6x4:
 
 ---
 
-## 16. Editing Bet Range
+## 15. Editing Bet Range
 
 `js/bet.js`:
 ```js
@@ -292,7 +268,7 @@ Change these; no other file requires edits. UI auto updates.
 
 ---
 
-## 17. Adding a New Symbol Example
+## 16. Adding a New Symbol Example
 
 1. Add asset to strip image (adjust design tool).
 2. Append symbol ID to `SYMBOL_MAP`.
@@ -305,7 +281,7 @@ Change these; no other file requires edits. UI auto updates.
 
 ---
 
-## 18. Known Constraints
+## 17. Known Constraints
 
 - Strip approach assumes uniform symbol heights.
 - Bonus buy multipliers are linear (`bet * X`).
@@ -313,13 +289,13 @@ Change these; no other file requires edits. UI auto updates.
 
 ---
 
-## 19. License
+## 18. License
 
 Add a license of choice (MIT recommended) if you plan open distribution.
 
 ---
 
-## 21. Contact / Credit
+## 19. Contact / Credit
 
 Created as a demonstration of Phaser slot architecture with modular bonus systems and clear state handling. Adapt freely.
 
