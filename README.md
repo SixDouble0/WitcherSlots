@@ -1,6 +1,9 @@
-# WitcherSlots (Phaser 3 Slot Machine)
+<img width="1919" height="878" alt="image" src="https://github.com/user-attachments/assets/cb914969-8d80-4301-a121-56167d07c580" /># WitcherSlots (Phaser 3 Slot Machine)
 
 A modular HTML5 slot machine built with Phaser 3, focusing on clean architecture, extensibility and two bonus mechanics (Mega Wild & Hold & Spin). This project demonstrates game flow orchestration, layered rendering, bonus state machines, and UI feedback (big win animations, modal system, dynamic bet handling).
+<img width="1919" height="874" alt="image" src="https://github.com/user-attachments/assets/39f8a3d6-adba-4c42-8dd8-d6876ab9d2b1" />
+
+
 
 ---
 
@@ -151,10 +154,14 @@ The strip is a single tall image scrolled vertically. Requirements:
 
 ### Mega Wild
 - Trigger: ≥3 Bonus symbols `'B!'`.
+<img width="1919" height="878" alt="image" src="https://github.com/user-attachments/assets/d4f58a4b-b6bb-40ec-b521-b276e7c06d66" />
 - 10 spins; full-reel MEGAWILD starting on rightmost reel (4).
 - Stays for 2 spins per reel, then shifts left (animation occurs at next spin start).
 - Per-spin wins added to `megaWildTotalWin` (displayed via Bonus Total badge).
 - At end: total paid, wolf persists until next normal spin (cleanup at spin start).
+
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/ec5c11f3-5f2d-43b4-8db6-870353976ded" />
+
 
 Key state fields:
 ```js
@@ -172,6 +179,8 @@ megaWildCleanupPending // cleanup flag after bonus end
 - 3 spins countdown; landing new WILD resets spins-left to 3.
 - If board fills or spins-left hits 0: sum all coin values, pay, exit.
 - Coins re-render each spin with numeric values.
+<img width="1006" height="603" alt="image" src="https://github.com/user-attachments/assets/cb5d9c99-0c15-4a88-86e9-e01ef008d5ff" />
+
 
 Key state fields:
 ```js
@@ -302,19 +311,7 @@ Change these; no other file requires edits. UI auto updates.
 
 ---
 
-## 19. Roadmap (Suggested)
-
-- Mobile scaling / flexible layout.
-- Particle effects on wins.
-- Audio / mute toggle.
-- Auto-play with stop conditions.
-- RTP balancing tool (simulate many spins).
-- Save/load profile (localStorage or backend).
-- Unit test harness (Jest or Vitest).
-
----
-
-## 20. License
+## 19. License
 
 Add a license of choice (MIT recommended) if you plan open distribution.
 
