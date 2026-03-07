@@ -289,16 +289,11 @@ Change these; no other file requires edits. UI auto updates.
 
 ---
 
-## 18. License
 
-Add a license of choice (MIT recommended) if you plan open distribution.
-
----
-
-## 19. Contact / Credit
+## 18. Credit
 
 Created as a demonstration of Phaser slot architecture with modular bonus systems and clear state handling. Adapt freely.
 
 ---
 
-Happy spinning and extending!
+Happy spinning 
